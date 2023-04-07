@@ -1,6 +1,21 @@
+:root{
+  --body_background: white;
+  --heading_color: black;
+  --subheading_color: #737676;
+  --body_color: #AAABAB;
+  --link-color: blue;
+}
+[dark-theme="dark"]{
+  --body_background: black;
+  --heading_color: white;
+  --subheading_color: #dde0e0;
+  --body_color: #c2c4c4;
+  --link_color: #20c4c4;
+}
 .App {
   text-align: center;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -21,7 +36,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--body_color);
 }
 
 .App-link {

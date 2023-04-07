@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/App.css";
+import NavbarFunction from "./components/Navbar/Navbar.js";
+import Home from "./pages/Home";
+import PreviousWork from "./pages/PreviousWork";
+import HowItWorks from "./pages/HowItWorks";
+import OurWork from "./pages/OurWork";
+import StartJourney from "./pages/StartJourney";
+import DarkMode from "./components/DarkMode/DarkMode";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <NavbarFunction />
+
+            {/* <Routes>
+            <Route path="/" element={ <Home /> }/ >
+            <Route path="previous-work" element={ <PreviousWork /> } />
+            <Route path="how-it-works" element={ <HowItWorks /> } />
+            <Route path="our-work" element={ <OurWork /> } />
+            <Route path="start-journey" element={ <StartJourney />} />
+          </Routes> */}
+            <Home />
+            <HowItWorks />
+            <PreviousWork />
+            <OurWork />
+            <StartJourney />
+        </div>
+    );
 }
 
 export default App;
