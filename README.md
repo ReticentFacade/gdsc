@@ -1,11 +1,10 @@
 ## To-Do: 
--[ ] Finish Dark-theme-toggle
--[ ] Add client-review page
--[ ] Add footer
--[ ] Fix Routes
--[ ] Make it responsive
--[ ] Fix buttons
-
+- [ ] Finish Dark-theme-toggle
+- [ ] Add client-review page
+- [ ] Add footer
+- [ ] Fix Routes
+- [ ] Make it responsive
+- [ ] Fix buttons
 
 
 ## Available Scripts
